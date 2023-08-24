@@ -1,0 +1,110 @@
+# .htaccess por defecto
+# Permitir ejecución de scripts CGI y no presentar indice de dirctorios
+Options +ExecCGI -Indexes
+
+# Servir automáticamente los archivos de índice (index.(*) ó
+# default.(*))
+DirectoryIndex http://www.elmanco.es/default-start-page.html
+
+# Errores
+ErrorDocument 400 /404.html	
+ErrorDocument 401 /404.html	
+ErrorDocument 403 /404.html	
+ErrorDocument 404 /404.html
+ErrorDocument 405 /404.html
+ErrorDocument 406 /404.html
+ErrorDocument 409 /404.html
+ErrorDocument 413 /404.html
+ErrorDocument 414 /404.html
+ErrorDocument 500 /404.html
+ErrorDocument 501 /404.html
+
+# Firma del Servidor en Off
+ServerSignature Off
+
+# Agregando el MIME-Type de los archivos .FLV, .SWF y .ICO
+AddType video/x-flv .flv
+AddType application/x-shockwave-flash .swf
+AddType image/x-icon .ico
+
+# Configurando por defecto el juego de caracteres y el lenguaje
+
+#AddDefaultCharset UTF-8
+#AddLanguage en-US .html .htm .txt .xml .php
+
+# Colocando TIMEZONE y el correo del administrador
+
+#SetEnv TZ America/Indianapolis
+#SetEnv SERVER_ADMIN webmaster@askapache.com
+
+# PHP como Script CGI
+### PHPINI-CGI
+# AddHandler php-cgi .php
+# Action php-cgi /cgi-bin/php5.cgi
+
+# PHP en FAST-CGI
+### FAST-CGI
+# AddHandler fastcgi-script .fcg .fcgi .fpl
+# AddHandler php5-fastcgi .php
+# Action php5-fastcgi /cgi-bin/fastcgi.fcgi
+
+
+
+# URL’s amigables y Redireccionamientos
+#
+### Redireccionamientos SEO (según el ejemplo)
+# Redirect 301 /ssl-ns.html /htaccess/apache-ssl-in-htaccess.html
+# Redirect 301 /ht.tml
+# Redirect 301 /index.html /
+# RedirectMatch 301 /2006/htaccess-forum/(.*) /2006/htaccess/$1
+# RedirectMatch 301 /(.*)rfc2616(.*) http://www.w3.org/Protocols/$1
+# RedirectMatch 301 /phpmanual(.*) /manual/en/$1
+
+### Activando MOD_REWRITE
+RewriteEngine On
+RewriteBase /
+
+### MOD_REWRITE para WordPress
+# <IfModule mod_rewrite.c>
+#     RewriteEngine On
+#     RewriteBase /
+#     RewriteCond %{REQUEST_FILENAME} !-f
+#     RewriteCond %{REQUEST_FILENAME} !-d
+#     RewriteRule . /index.php [L]
+# </IfModule>
+
+### Requerir el subdominio WWW
+# RewriteCond %{HTTP_HOST} !^www\.somewhere\.com$ [NC]
+# RewriteRule ^(.*)$ /$1 [R=301,L]
+
+### Para código enciclado
+# RewriteCond %{ENV:REDIRECT_STATUS} 200
+# RewriteRule ^.*$ - [L]
+
+### Redireccionar el Blog Feed a FeedBurner
+# RewriteCond %{HTTP_USER_AGENT} !^.*(FeedBurner|FeedValidator|Recent) [NC]
+# RewriteRule ^feed/?.*$ http://feeds.feedburner.com/somewhere [L, R=302]
+
+### Bloquear WGET?
+# RewriteCond %{HTTP_USER_AGENT} ^Wget.* [NC]
+# RewriteRule .* /cgi-bin/forbidden.cgi [L]
+
+
+# Autenticación
+#
+
+### Protección Básica
+# AuthName "Prompt"
+# AuthUserFile /home/somewhere.com/.htpasswd
+# AuthType basic
+# Require valid-user
+
+### Sitio en Construcción
+# AuthName "Under Development"
+# AuthUserFile /home/askapache.com/.htpasswd
+# AuthType basic
+# Require valid-user
+# Order Deny,Allow
+# Deny from all
+# Allow from 23.23.23.1 w3.org googlebot.com google.com
+# Satisfy Any
