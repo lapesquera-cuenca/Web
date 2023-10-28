@@ -1,69 +1,243 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-	<url>
-		<loc>http://www.elmanco.es/</loc>
-		<lastmod>2011-03-26</lastmod>
-		<changefreq>monthly</changefreq>
-		<priority>0.9</priority>
-	</url>
-	<url>
-		<loc>http://www.elmanco.es/entremontes/index.html</loc>
-		<lastmod>2011-03-26</lastmod>
-		<changefreq>monthly</changefreq>
-		<priority>0.8</priority>
-	</url>
-	<url>
-		<loc>http://www.elmanco.es/noticias_anteriores.html</loc>
-		<lastmod>2011-03-26</lastmod>
-		<changefreq>monthly</changefreq>
-		<priority>0.4</priority>
-	</url>
-	<url>
-		<loc>http://www.elmanco.es/entremontes/articles.html</loc>
-		<lastmod>2011-03-26</lastmod>
-		<changefreq>monthly</changefreq>
-		<priority>0.8</priority>
-	</url>
-	<url>
-		<loc>http://www.elmanco.es/republicanos.html</loc>
-		<lastmod>2011-03-26</lastmod>
-		<changefreq>monthly</changefreq>
-		<priority>0.6</priority>
-	</url>
-	<url>
-		<loc>http://www.elmanco.es/articulos.html</loc>
-		<lastmod>2011-03-26</lastmod>
-		<changefreq>monthly</changefreq>
-		<priority>0.4</priority>
-	</url>
-	<url>
-		<loc>http://www.elmanco.es/ruta-manco.html</loc>
-		<lastmod>2011-03-26</lastmod>
-		<changefreq>monthly</changefreq>
-		<priority>0.6</priority>
-	</url>
-	<url>
-		<loc>http://www.elmanco.es/quebradas.html</loc>
-		<lastmod>2011-03-26</lastmod>
-		<changefreq>monthly</changefreq>
-		<priority>0.4</priority>
-	</url>
-	<url>
-		<loc>http://www.elmanco.es/entremontes/notes.html</loc>
-		<lastmod>2011-03-26</lastmod>
-		<changefreq>monthly</changefreq>
-		<priority>0.8</priority>
-	</url>
-	<url>
-		<loc>http://www.elmanco.es/guerrilleros.html</loc>
-		<lastmod>2011-03-26</lastmod>
-		<changefreq>monthly</changefreq>
-		<priority>0.7</priority>
-	</url>
-	<url>
-		<loc>http://www.elmanco.es/index.html</loc>
-		<lastmod>2011-03-26</lastmod>
-		<changefreq>monthly</changefreq>
-		<priority>0.8</priority>
-	</url>
+<url>
+	<loc>http://www.elmanco.es/</loc>
+	<lastmod>2023-10-28T13:52:17+01:00</lastmod>
+	<priority>1.0</priority>
+</url>
+<url>
+	<loc>http://www.elmanco.es/index.html</loc>
+	<lastmod>2023-10-28T13:52:17+01:00</lastmod>
+	<priority>1.0</priority>
+</url>
+<url>
+	<loc>http://www.elmanco.es/biografia.html</loc>
+	<lastmod>2023-10-28T13:52:17+01:00</lastmod>
+	<priority>1.0</priority>
+</url>
+<url>
+	<loc>http://www.elmanco.es/ruta.html</loc>
+	<lastmod>2023-10-28T13:52:17+01:00</lastmod>
+	<priority>1.0</priority>
+</url>
+<url>
+	<loc>http://www.elmanco.es/masacre.html</loc>
+	<lastmod>2023-10-28T13:52:17+01:00</lastmod>
+	<priority>1.0</priority>
+</url>
+<url>
+	<loc>http://www.elmanco.es/libro.html</loc>
+	<lastmod>2023-10-28T13:52:17+01:00</lastmod>
+	<priority>1.0</priority>
+</url>
+<url>
+	<loc>http://www.elmanco.es/entremontes/10.html</loc>
+	<lastmod>2023-10-28T13:52:17+01:00</lastmod>
+	<priority>0.8</priority>
+</url>
+<url>
+	<loc>http://www.elmanco.es/entremontes/</loc>
+	<lastmod>2023-10-28T13:52:17+01:00</lastmod>
+	<priority>0.8</priority>
+</url>
+<url>
+	<loc>http://www.elmanco.es/entremontes/index.html</loc>
+	<lastmod>2023-10-28T13:52:20+01:00</lastmod>
+	<priority>0.8</priority>
+</url>
+<url>
+	<loc>http://www.elmanco.es/entremontes/7.html</loc>
+	<lastmod>2023-10-28T13:52:20+01:00</lastmod>
+	<priority>0.8</priority>
+</url>
+<url>
+	<loc>http://www.elmanco.es/entremontes/8.html</loc>
+	<lastmod>2023-10-28T13:52:20+01:00</lastmod>
+	<priority>0.8</priority>
+</url>
+<url>
+	<loc>http://www.elmanco.es/entremontes/9.html</loc>
+	<lastmod>2023-10-28T13:52:20+01:00</lastmod>
+	<priority>0.8</priority>
+</url>
+<url>
+	<loc>http://www.elmanco.es/entremontes/10.1.html</loc>
+	<lastmod>2023-10-28T13:52:20+01:00</lastmod>
+	<priority>0.8</priority>
+</url>
+<url>
+	<loc>http://www.elmanco.es/entremontes/doc/entremontes-10.pdf</loc>
+	<lastmod>2023-10-28T13:52:20+01:00</lastmod>
+	<priority>0.6</priority>
+</url>
+<url>
+	<loc>http://www.elmanco.es/entremontes/10.2.html</loc>
+	<lastmod>2023-10-28T13:52:20+01:00</lastmod>
+	<priority>0.8</priority>
+</url>
+<url>
+	<loc>http://www.elmanco.es/entremontes/10.3.html</loc>
+	<lastmod>2023-10-28T13:52:20+01:00</lastmod>
+	<priority>0.8</priority>
+</url>
+<url>
+	<loc>http://www.elmanco.es/entremontes/6.html</loc>
+	<lastmod>2023-10-28T13:52:20+01:00</lastmod>
+	<priority>0.8</priority>
+</url>
+<url>
+	<loc>http://www.elmanco.es/entremontes/5.html</loc>
+	<lastmod>2023-10-28T13:52:20+01:00</lastmod>
+	<priority>0.8</priority>
+</url>
+<url>
+	<loc>http://www.elmanco.es/entremontes/4.html</loc>
+	<lastmod>2023-10-28T13:52:20+01:00</lastmod>
+	<priority>0.8</priority>
+</url>
+<url>
+	<loc>http://www.elmanco.es/entremontes/3.html</loc>
+	<lastmod>2023-10-28T13:52:20+01:00</lastmod>
+	<priority>0.8</priority>
+</url>
+<url>
+	<loc>http://www.elmanco.es/entremontes/2.html</loc>
+	<lastmod>2023-10-28T13:52:20+01:00</lastmod>
+	<priority>0.8</priority>
+</url>
+<url>
+	<loc>http://www.elmanco.es/entremontes/1.html</loc>
+	<lastmod>2023-10-28T13:52:20+01:00</lastmod>
+	<priority>0.8</priority>
+</url>
+<url>
+	<loc>http://www.elmanco.es/entremontes/8.1.html</loc>
+	<lastmod>2023-10-28T13:52:21+01:00</lastmod>
+	<priority>0.8</priority>
+</url>
+<url>
+	<loc>http://www.elmanco.es/entremontes/doc/entremontes-8.pdf</loc>
+	<lastmod>2023-10-28T13:52:21+01:00</lastmod>
+	<priority>0.6</priority>
+</url>
+<url>
+	<loc>http://www.elmanco.es/entremontes/8.2.html</loc>
+	<lastmod>2023-10-28T13:52:21+01:00</lastmod>
+	<priority>0.8</priority>
+</url>
+<url>
+	<loc>http://www.elmanco.es/entremontes/8.3.html</loc>
+	<lastmod>2023-10-28T13:52:21+01:00</lastmod>
+	<priority>0.8</priority>
+</url>
+<url>
+	<loc>http://www.elmanco.es/entremontes/7.1.html</loc>
+	<lastmod>2023-10-28T13:52:21+01:00</lastmod>
+	<priority>0.8</priority>
+</url>
+<url>
+	<loc>http://www.elmanco.es/entremontes/doc/entremontes-7.pdf</loc>
+	<lastmod>2023-10-28T13:52:21+01:00</lastmod>
+	<priority>0.6</priority>
+</url>
+<url>
+	<loc>http://www.elmanco.es/entremontes/7.2.html</loc>
+	<lastmod>2023-10-28T13:52:21+01:00</lastmod>
+	<priority>0.8</priority>
+</url>
+<url>
+	<loc>http://www.elmanco.es/entremontes/7.3.html</loc>
+	<lastmod>2023-10-28T13:52:21+01:00</lastmod>
+	<priority>0.8</priority>
+</url>
+<url>
+	<loc>http://www.elmanco.es/entremontes/doc/entremontes-9.pdf</loc>
+	<lastmod>2023-10-28T13:52:22+01:00</lastmod>
+	<priority>0.6</priority>
+</url>
+<url>
+	<loc>http://www.elmanco.es/entremontes/9.1.html</loc>
+	<lastmod>2023-10-28T13:52:22+01:00</lastmod>
+	<priority>0.8</priority>
+</url>
+<url>
+	<loc>http://www.elmanco.es/entremontes/5.1.html</loc>
+	<lastmod>2023-10-28T13:52:24+01:00</lastmod>
+	<priority>0.8</priority>
+</url>
+<url>
+	<loc>http://www.elmanco.es/entremontes/doc/Entremontes-5.pdf</loc>
+	<lastmod>2023-10-28T13:52:24+01:00</lastmod>
+	<priority>0.6</priority>
+</url>
+<url>
+	<loc>http://www.elmanco.es/entremontes/5.2.html</loc>
+	<lastmod>2023-10-28T13:52:24+01:00</lastmod>
+	<priority>0.8</priority>
+</url>
+<url>
+	<loc>http://www.elmanco.es/entremontes/6.1.html</loc>
+	<lastmod>2023-10-28T13:52:24+01:00</lastmod>
+	<priority>0.8</priority>
+</url>
+<url>
+	<loc>http://www.elmanco.es/entremontes/doc/Entremontes-6.pdf</loc>
+	<lastmod>2023-10-28T13:52:24+01:00</lastmod>
+	<priority>0.6</priority>
+</url>
+<url>
+	<loc>http://www.elmanco.es/entremontes/6.2.html</loc>
+	<lastmod>2023-10-28T13:52:24+01:00</lastmod>
+	<priority>0.8</priority>
+</url>
+<url>
+	<loc>http://www.elmanco.es/entremontes/4.1.html</loc>
+	<lastmod>2023-10-28T13:52:24+01:00</lastmod>
+	<priority>0.8</priority>
+</url>
+<url>
+	<loc>http://www.elmanco.es/entremontes/doc/Entremontes-4.pdf</loc>
+	<lastmod>2023-10-28T13:52:24+01:00</lastmod>
+	<priority>0.6</priority>
+</url>
+<url>
+	<loc>http://www.elmanco.es/entremontes/4.2.html</loc>
+	<lastmod>2023-10-28T13:52:24+01:00</lastmod>
+	<priority>0.8</priority>
+</url>
+<url>
+	<loc>http://www.elmanco.es/entremontes/3.1.html</loc>
+	<lastmod>2023-10-28T13:52:25+01:00</lastmod>
+	<priority>0.8</priority>
+</url>
+<url>
+	<loc>http://www.elmanco.es/entremontes/doc/Entremontes-3.pdf</loc>
+	<lastmod>2023-10-28T13:52:25+01:00</lastmod>
+	<priority>0.6</priority>
+</url>
+<url>
+	<loc>http://www.elmanco.es/entremontes/3.2.html</loc>
+	<lastmod>2023-10-28T13:52:25+01:00</lastmod>
+	<priority>0.8</priority>
+</url>
+<url>
+	<loc>http://www.elmanco.es/entremontes/2.1.html</loc>
+	<lastmod>2023-10-28T13:52:25+01:00</lastmod>
+	<priority>0.8</priority>
+</url>
+<url>
+	<loc>http://www.elmanco.es/entremontes/doc/Entremontes-2.pdf</loc>
+	<lastmod>2023-10-28T13:52:25+01:00</lastmod>
+	<priority>0.6</priority>
+</url>
+<url>
+	<loc>http://www.elmanco.es/entremontes/2.2.html</loc>
+	<lastmod>2023-10-28T13:52:25+01:00</lastmod>
+	<priority>0.8</priority>
+</url>
+<url>
+	<loc>http://www.elmanco.es/entremontes/doc/Entremontes-1.pdf</loc>
+	<lastmod>2023-10-28T13:52:25+01:00</lastmod>
+	<priority>0.6</priority>
+</url>
 </urlset>

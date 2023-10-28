@@ -1,10 +1,10 @@
 # .htaccess por defecto
-# Permitir ejecución de scripts CGI y no presentar indice de dirctorios
+# Permitir ejecuciï¿½n de scripts CGI y no presentar indice de dirctorios
 Options +ExecCGI -Indexes
 
-# Servir automáticamente los archivos de índice (index.(*) ó
+# Servir automï¿½ticamente los archivos de ï¿½ndice (index.(*) ï¿½
 # default.(*))
-DirectoryIndex http://www.elmanco.es/default-start-page.html
+DirectoryIndex http://www.elmanco.es/index.html
 
 # Errores
 ErrorDocument 400 /404.html	
@@ -66,9 +66,9 @@ AddType image/x-icon .ico
 
 
 
-# URL’s amigables y Redireccionamientos
+# URLï¿½s amigables y Redireccionamientos
 #
-### Redireccionamientos SEO (según el ejemplo)
+### Redireccionamientos SEO (segï¿½n el ejemplo)
 # Redirect 301 /ssl-ns.html /htaccess/apache-ssl-in-htaccess.html
 # Redirect 301 /ht.tml
 # Redirect 301 /index.html /
@@ -93,7 +93,7 @@ RewriteBase /
 # RewriteCond %{HTTP_HOST} !^www\.somewhere\.com$ [NC]
 # RewriteRule ^(.*)$ /$1 [R=301,L]
 
-### Para código enciclado
+### Para cï¿½digo enciclado
 # RewriteCond %{ENV:REDIRECT_STATUS} 200
 # RewriteRule ^.*$ - [L]
 
@@ -106,16 +106,16 @@ RewriteBase /
 # RewriteRule .* /cgi-bin/forbidden.cgi [L]
 
 
-# Autenticación
+# Autenticaciï¿½n
 #
 
-### Protección Básica
+### Protecciï¿½n Bï¿½sica
 # AuthName "Prompt"
 # AuthUserFile /home/somewhere.com/.htpasswd
 # AuthType basic
 # Require valid-user
 
-### Sitio en Construcción
+### Sitio en Construcciï¿½n
 # AuthName "Under Development"
 # AuthUserFile /home/askapache.com/.htpasswd
 # AuthType basic
