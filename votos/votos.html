@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recuento de Votos</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Recuento de Votos</h1>
+        <div id="partidos">
+            <div class="partido">
+                <h2>PP</h2>
+                <div class="controls">
+                    <button class="restar" onclick="cambiarVotos('partido1', -1)">-</button>
+                    <span id="partido1-votos">0</span>
+                    <button class="sumar" onclick="cambiarVotos('partido1', 1)">+</button>
+                </div>
+            </div>
+            <div class="partido">
+                <h2>PSOE</h2>
+                <div class="controls">
+                    <button class="restar" onclick="cambiarVotos('partido2', -1)">-</button>
+                    <span id="partido2-votos">0</span>
+                    <button class="sumar" onclick="cambiarVotos('partido2', 1)">+</button>
+                </div>
+            </div>
+            <div class="partido">
+                <h2>Vox</h2>
+                <div class="controls">
+                    <button class="restar" onclick="cambiarVotos('partido3', -1)">-</button>
+                    <span id="partido3-votos">0</span>
+                    <button class="sumar" onclick="cambiarVotos('partido3', 1)">+</button>
+                </div>
+            </div>
+            <div class="partido">
+                <h2>Sumar</h2>
+                <div class="controls">
+                    <button class="restar" onclick="cambiarVotos('partido4', -1)">-</button>
+                    <span id="partido4-votos">0</span>
+                    <button class="sumar" onclick="cambiarVotos('partido4', 1)">+</button>
+                </div>
+            </div>
+            <div class="partido">
+                <h2>Podemos</h2>
+                <div class="controls">
+                    <button class="restar" onclick="cambiarVotos('partido5', -1)">-</button>
+                    <span id="partido5-votos">0</span>
+                    <button class="sumar" onclick="cambiarVotos('partido5', 1)">+</button>
+                </div>
+            </div>
+            <div class="partido">
+                <h2>Ciudadanos</h2>
+                <div class="controls">
+                    <button class="restar" onclick="cambiarVotos('partido6', -1)">-</button>
+                    <span id="partido6-votos">0</span>
+                    <button class="sumar" onclick="cambiarVotos('partido6', 1)">+</button>
+                </div>
+            </div>
+            <div class="partido">
+                <h2>otros</h2>
+                <div class="controls">
+                    <button class="restar" onclick="cambiarVotos('partido7', -1)">-</button>
+                    <span id="partido7-votos">0</span>
+                    <button class="sumar" onclick="cambiarVotos('partido7', 1)">+</button>
+                </div>
+            </div>
+            <div class="partido">
+                <h2>blanco</h2>
+                <div class="controls">
+                    <button class="restar" onclick="cambiarVotos('partido8', -1)">-</button>
+                    <span id="partido8-votos">0</span>
+                    <button class="sumar" onclick="cambiarVotos('partido8', 1)">+</button>
+                </div>
+            </div>
+            <div class="partido">
+                <h2>nulo</h2>
+                <div class="controls">
+                    <button class="restar" onclick="cambiarVotos('partido9', -1)">-</button>
+                    <span id="partido9-votos">0</span>
+                    <button class="sumar" onclick="cambiarVotos('partido9', 1)">+</button>
+                </div>
+            </div>
+        </div>
+        <div class="total">
+            <h2>Total de Votos: <span id="total-votos">0</span></h2>
+        </div>
+    </div>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
