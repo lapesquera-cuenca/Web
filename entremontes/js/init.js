@@ -145,7 +145,7 @@
 					};
 
 			// Event bindings
-				$window.load(function() {
+				$window.on("load",function() {
 
 					$window.on('scroll resize', function() {
 
@@ -178,7 +178,7 @@
 
 		// Pause CSS transitions until the page has loaded (prevents "flickering")
 			$body.addClass('paused');
-			$window.load(function() {
+			$window.on("load",function() {
 				$body.removeClass('paused');
 			});
 
@@ -297,7 +297,7 @@
 						});
 						
 				// Init
-					$window.load(function() {
+					$window.on("load",function() {
 
 						reelWidth = $reel[0].scrollWidth;
 
@@ -364,7 +364,7 @@
 						$('<div class="overlay" />').appendTo($header);
 						
 						$window
-							.load(function() {
+							.on("load",function() {
 								var imageURL = $header.css('background-image').replace(/"/g,"").replace(/url\(|\)$/ig, "");
 
 								$.n33_preloadImage(imageURL, function() {

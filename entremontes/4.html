@@ -4,19 +4,14 @@
 	html5up.net | @n33co
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 -->
-<html>
+<html lang="es">
 	<head>
 		<title>Nº 4 Un año de guerrillas. Los Montes Universales y el maquis.</title>
   <link rel="icon" type="image/x-icon" href="../favicon.ico">
-		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
-		<meta name="description" content="" />
+		<meta charset="utf-8" />
+		<meta name="description" content="Número 4 de Entremontes, revista digital de estudios del maquis: Un año de guerrillas. Los Montes Universales y el maquis.." />
 		<meta name="keywords" content="" />
 		<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600" rel="stylesheet" type="text/css" />
-		<script src="js/jquery.min.js"></script>
-		<script src="js/jquery.dropotron.js"></script>
-		<script src="js/skel.min.js"></script>
-		<script src="js/skel-panels.min.js"></script>
-		<script src="js/init.js"></script>
 		<noscript>
 			<link rel="stylesheet" href="css/skel-noscript.css" />
 			<link rel="stylesheet" href="css/style.css" />
@@ -24,45 +19,15 @@
 			<link rel="stylesheet" href="css/style-noscript.css" />
 		</noscript>
         
-        <script type="text/javascript">
-
-
-
-  	//load de jquery
-	$(document).ready(function()
-	{
-
-		
-		$("img.icon-align-left").each(function() {
-			title = $(this).attr("alt");
-			altura = $(this).attr("height");
-			tabla1="<table  width='53%' height='"+altura+"' border='1' id='authimg'><tr><td>";
-			tabla2="</td></tr><tr><td><p class='foot'>"+title+"</p></td></tr></table>";
-			$(this).wrap(tabla1+tabla2);
-		});
-		
-		$("img.icon-align-right").each(function() {
-			title = $(this).attr("alt");
-			altura = $(this).attr("height");
-			tabla1="<table  width='20%' height='"+altura+"' border='1' id='sidebar'><tr><td>";
-			tabla2="</td></tr><tr><td><p class='foot'>"+title+"</p></td></tr></table>";
-			$(this).wrap(tabla1+tabla2);
-		});
-		
-	});
-	
-  </script>
+			<!-- Google tag (gtag.js) -->
+		<script async src="https://www.googletagmanager.com/gtag/js?id=G-Z732XRPB18"></script>
+		<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+		gtag('config', 'G-Z732XRPB18');
+		</script>
 	</head>
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-Z732XRPB18"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-Z732XRPB18');
-</script>
-</head>
 	<body class="no-sidebar">
 
 		<!-- Header -->
@@ -182,5 +147,40 @@ Texto publicado en la Revista Olcades, 2a época, nº 3, Cuenca, 2000, pág. 29-
 				</div>
 			</div>
 
-	</body>
+	
+	<!-- Scripts movidos al final para no bloquear el render -->
+	<script src="js/jquery.min.js"></script>
+	<script src="js/jquery.dropotron.js"></script>
+	<script src="js/skel.min.js"></script>
+	<script src="js/skel-panels.min.js"></script>
+	<script src="js/init.js"></script>
+	<script type="text/javascript">
+
+
+
+  	//load de jquery
+	$(document).ready(function()
+	{
+
+		
+		$("img.icon-align-left").each(function() {
+			title = $(this).attr("alt");
+			altura = $(this).attr("height");
+			tabla1="<table  width='53%' height='"+altura+"' border='1' id='authimg'><tr><td>";
+			tabla2="</td></tr><tr><td><p class='foot'>"+title+"</p></td></tr></table>";
+			$(this).wrap(tabla1+tabla2);
+		});
+		
+		$("img.icon-align-right").each(function() {
+			title = $(this).attr("alt");
+			altura = $(this).attr("height");
+			tabla1="<table  width='20%' height='"+altura+"' border='1' id='sidebar'><tr><td>";
+			tabla2="</td></tr><tr><td><p class='foot'>"+title+"</p></td></tr></table>";
+			$(this).wrap(tabla1+tabla2);
+		});
+		
+	});
+	
+  </script>
+</body>
 </html>
