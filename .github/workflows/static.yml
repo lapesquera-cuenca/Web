@@ -33,13 +33,29 @@ jobs:
         uses: actions/checkout@v5
       - name: Setup Pages
         uses: actions/configure-pages@v5
-      - name: Remove obsolete artifacts from deployment
-        run: rm -rf obsoleto_dreamweaver doc
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+          cache-dependency-path: entremontes_v2/package-lock.json
+      - name: Build Entremontes v2 (Astro)
+        run: npm ci && npm run build
+        working-directory: entremontes_v2
+      - name: Assemble site
+        run: |
+          mkdir -p staging
+          rsync -a \
+            --exclude='/.git*' \
+            --exclude='/entremontes_v2' \
+            --exclude='/obsoleto_dreamweaver' \
+            --exclude='/doc' \
+            ./ staging/
+          mkdir -p staging/entremontes_v2
+          cp -r entremontes_v2/dist/. staging/entremontes_v2/
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          # Upload entire repository
-          path: '.'
+          path: 'staging'
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
