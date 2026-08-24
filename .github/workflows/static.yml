@@ -47,6 +47,7 @@ jobs:
           rsync -a \
             --exclude='/.git*' \
             --exclude='/entremontes' \
+            --exclude='/entremontes_v2' \
             --exclude='/entremontes_backup_old' \
             --exclude='/obsoleto_dreamweaver' \
             --exclude='/doc' \
