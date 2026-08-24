@@ -1,36 +1,7 @@
-@import url(font-awesome.min.css);
+/* Respaldo para navegadores sin JavaScript.
+   El CSS principal ya es funcional sin JS: los elementos .reveal solo se
+   ocultan cuando el documento tiene la clase .js (añadida por script).
+   Aquí solo se garantiza que nada quede oculto o inaccesible. */
 
-/*
-	El Manco de La Pesquera
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
-*/
-
-/* Wrapper */
-
-	#wrapper {
-		background-color: #212931;
-		background-image: url("../../images/overlay.png"), linear-gradient(0deg, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url("../../images/bg.jpg");
-		background-size: auto,								auto,														100% auto;
-		background-position: center,								center,														top center;
-		background-repeat: repeat,								no-repeat,													no-repeat;
-		background-attachment: fixed,								fixed,														fixed;
-	}
-
-		#wrapper.fade-in:before {
-			display: none;
-		}
-
-/* Intro */
-
-	body.is-preload #intro {
-		opacity: 1;
-	}
-
-		body.is-preload #intro:not(.hidden) + #header + #nav {
-			-moz-transform: none;
-			-webkit-transform: none;
-			-ms-transform: none;
-			transform: none;
-			opacity: 1;
-		}
+.video-facade { display: none; }
+.no-js-note { display: block; }
