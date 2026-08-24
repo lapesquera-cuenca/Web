@@ -7,7 +7,7 @@ import { dirname, join, normalize } from 'node:path';
 import { fileURLToPath } from 'node:url';
 
 const DIST = join(dirname(fileURLToPath(import.meta.url)), '..', 'dist');
-const BASE = process.env.PAGES_BASE ?? '/Web/entremontes';
+const BASE = process.env.PAGES_BASE ?? '/entremontes';
 
 function walk(dir) {
 	return readdirSync(dir, { withFileTypes: true }).flatMap((e) => {
