@@ -7,6 +7,7 @@ import { dirname, join, normalize } from 'node:path';
 import { fileURLToPath } from 'node:url';
 
 const DIST = join(dirname(fileURLToPath(import.meta.url)), '..', 'dist');
+const BASE = process.env.PAGES_BASE ?? '/Web/entremontes_v2';
 
 function walk(dir) {
 	return readdirSync(dir, { withFileTypes: true }).flatMap((e) => {
@@ -43,7 +44,15 @@ for (const file of htmlFiles) {
 		if (!ref.trim()) continue;
 
 		checked++;
-		const target = normalize(join(relDir, decodeURIComponent(ref)));
+		let target;
+		if (ref.startsWith(BASE + '/')) {
+			// URL absoluta generada por Astro con base -> relativa a dist/
+			target = normalize(join(DIST, decodeURIComponent(ref.slice(BASE.length + 1))));
+		} else if (ref.startsWith('/')) {
+			target = normalize(join(DIST, decodeURIComponent(ref)));
+		} else {
+			target = normalize(join(relDir, decodeURIComponent(ref)));
+		}
 		if (!existsSync(target) || statSync(target).isDirectory()) {
 			broken.push(`${relPath(file)} -> ${raw}`);
 		}

@@ -38,7 +38,7 @@ const canonical = new URL(Astro.url.pathname, Astro.site);
 		<meta property="og:site_name" content="Entremontes" />
 		<meta property="og:title" content={title || 'Entremontes · Revista Digital de Estudios del Maquis'} />
 		<meta property="og:description" content={description} />
-		<meta property="og:image" content={new URL(ogImage, Astro.site)} />
+		<meta property="og:image" content={new URL(ogImage, Astro.url)} />
 
 		<!-- Google tag (gtag.js) -->
 		<script async src="https://www.googletagmanager.com/gtag/js?id=G-Z732XRPB18"></script>
