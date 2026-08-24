@@ -37,21 +37,22 @@ jobs:
         with:
           node-version: 22
           cache: npm
-          cache-dependency-path: entremontes_v2/package-lock.json
-      - name: Build Entremontes v2 (Astro)
+          cache-dependency-path: entremontes/package-lock.json
+      - name: Build Entremontes (Astro)
         run: npm ci && npm run build
-        working-directory: entremontes_v2
+        working-directory: entremontes
       - name: Assemble site
         run: |
           mkdir -p staging
           rsync -a \
             --exclude='/.git*' \
-            --exclude='/entremontes_v2' \
+            --exclude='/entremontes' \
+            --exclude='/entremontes_backup_old' \
             --exclude='/obsoleto_dreamweaver' \
             --exclude='/doc' \
             ./ staging/
-          mkdir -p staging/entremontes_v2
-          cp -r entremontes_v2/dist/. staging/entremontes_v2/
+          mkdir -p staging/entremontes
+          cp -r entremontes/dist/. staging/entremontes/
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
