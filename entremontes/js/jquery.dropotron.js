@@ -46,7 +46,7 @@
 
 		// Main
 			_top
-				.bind('doCollapseAll', function() {
+				.on('doCollapseAll', function() {
 					_menus
 						.trigger('doCollapse');
 				});
@@ -71,7 +71,7 @@
 					.mouseenter(function(e) {
 						window.clearTimeout(hideTimeoutId);
 					})
-					.bind('doExpand', function() {
+					.on('doExpand', function() {
 						
 						if (menu.is(':visible'))
 							return false;
@@ -286,7 +286,7 @@
 
 						return false;
 					})
-					.bind('doCollapse', function() {
+					.on('doCollapse', function() {
 						
 						if (!menu.is(':visible'))
 							return false;
@@ -299,7 +299,7 @@
 						return false;
 
 					})
-					.bind('doToggle', function(e) {
+					.on('doToggle', function(e) {
 					
 						if (menu.is(':visible'))
 							menu.trigger('doCollapse');
@@ -314,7 +314,7 @@
 					.disableSelection_dropotron()
 					.addClass('opener')
 					.css('cursor', 'pointer')
-					.bind(_eventType, function(e) {
+					.on(_eventType, function(e) {
 					
 						if (isLocked)
 							return;
