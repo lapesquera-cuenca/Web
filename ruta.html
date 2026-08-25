@@ -15,13 +15,17 @@
   <meta property="og:description" content="11 kilómetros de historia por los parajes del maquis en La Pesquera (Cuenca).">
   <meta property="og:url" content="https://www.elmanco.es/ruta.html">
   <meta property="og:image" content="https://www.elmanco.es/images/opt/ruta-hero.jpg">
+  <meta property="og:image:width" content="700">
+  <meta property="og:image:height" content="465">
+  <meta property="og:image:alt" content="Paisaje de la Ruta del Manco en La Pesquera">
   <meta property="og:locale" content="es_ES">
   <script>document.documentElement.classList.add("js");</script>
   <link rel="stylesheet" href="assets/css/main.css">
   <noscript><link rel="stylesheet" href="assets/css/noscript.css"></noscript>
+  <link rel="preconnect" href="https://unpkg.com">
   <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="">
   <script type="application/ld+json">
-  {
+  [{
     "@context": "https://schema.org",
     "@type": "Trail",
     "name": "La Ruta del Manco (PR-CU-58)",
@@ -29,7 +33,14 @@
     "url": "https://www.elmanco.es/ruta.html",
     "inLanguage": "es",
     "address": {"@type": "PostalAddress", "addressLocality": "La Pesquera", "addressRegion": "Cuenca", "addressCountry": "ES"}
-  }
+  },
+  {
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {"@type": "ListItem", "position": 1, "name": "Principal", "item": "https://www.elmanco.es/"},
+      {"@type": "ListItem", "position": 2, "name": "La Ruta", "item": "https://www.elmanco.es/ruta.html"}
+    ]
+  }]
   </script>
   <!-- Analítica sin cookies: descomenta y sustituye XXX por tu código GoatCounter (https://www.goatcounter.com)
   <script data-goatcounter="https://XXX.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
@@ -68,7 +79,7 @@
 
     <div class="container section--tight">
       <figure class="photo reveal" style="max-width:52rem;">
-        <img src="images/opt/ruta-hero.jpg" alt="Paisaje de la Ruta del Manco en La Pesquera" width="700" height="465" style="max-width:700px;" fetchpriority="high">
+        <picture><source type="image/avif" srcset="images/opt/ruta-hero.avif"><source type="image/webp" srcset="images/opt/ruta-hero.webp"><img src="images/opt/ruta-hero.jpg" alt="Paisaje de la Ruta del Manco en La Pesquera" width="700" height="465" style="max-width:700px;" fetchpriority="high"></picture>
         <figcaption><b>La Ruta del Manco</b> · La Pesquera, Serranía de Cuenca</figcaption>
       </figure>
 
@@ -113,14 +124,14 @@
         <h2 class="section__title">Galería de la ruta</h2>
       </header>
       <div class="gallery reveal">
-        <button type="button"><img src="images/opt/ruta-2.jpg" alt="Paisaje del sendero PR-CU-58" loading="lazy" data-caption="El sendero entre cultivos de vid, almendro y olivo"></button>
-        <button type="button"><img src="images/opt/ruta-3.jpg" alt="Panorámica desde la ruta" loading="lazy" data-caption="Panorámica de la Serranía"></button>
-        <button type="button"><img src="images/opt/ruta-4.jpg" alt="Tramo de monte de la ruta" loading="lazy" data-caption="Tramo de monte"></button>
-        <button type="button"><img src="images/opt/ruta-5.jpg" alt="Pinar junto al camino" loading="lazy" data-caption="Pinares de La Pesquera"></button>
-        <button type="button"><img src="images/opt/ruta-6.jpg" alt="Fuente de La Olmedilla" loading="lazy" data-caption="Fuente de La Olmedilla, antigua base guerrillera"></button>
-        <button type="button"><img src="images/opt/ruta-7.jpg" alt="Rambla de la Olmedilla" loading="lazy" data-caption="Rambla de la Olmedilla, vía de escape de dos guerrilleros"></button>
-        <button type="button"><img src="images/opt/ruta-8.jpg" alt="Camino de Enguídanos" loading="lazy" data-caption="Camino de Enguídanos, paso de los cuerpos en 1951"></button>
-        <button type="button"><img src="images/opt/ruta-9.jpg" alt="Último tramo de la ruta hacia La Pesquera" loading="lazy" data-caption="Último tramo: la carretera del Pantano"></button>
+        <button type="button"><picture><source type="image/avif" srcset="images/opt/ruta-2.avif"><source type="image/webp" srcset="images/opt/ruta-2.webp"><img src="images/opt/ruta-2.jpg" alt="Paisaje del sendero PR-CU-58" loading="lazy" data-caption="El sendero entre cultivos de vid, almendro y olivo"></picture></button>
+        <button type="button"><picture><source type="image/avif" srcset="images/opt/ruta-3.avif"><source type="image/webp" srcset="images/opt/ruta-3.webp"><img src="images/opt/ruta-3.jpg" alt="Panorámica desde la ruta" loading="lazy" data-caption="Panorámica de la Serranía"></picture></button>
+        <button type="button"><picture><source type="image/avif" srcset="images/opt/ruta-4.avif"><source type="image/webp" srcset="images/opt/ruta-4.webp"><img src="images/opt/ruta-4.jpg" alt="Tramo de monte de la ruta" loading="lazy" data-caption="Tramo de monte"></picture></button>
+        <button type="button"><picture><source type="image/avif" srcset="images/opt/ruta-5.avif"><source type="image/webp" srcset="images/opt/ruta-5.webp"><img src="images/opt/ruta-5.jpg" alt="Pinar junto al camino" loading="lazy" data-caption="Pinares de La Pesquera"></picture></button>
+        <button type="button"><picture><source type="image/avif" srcset="images/opt/ruta-6.avif"><source type="image/webp" srcset="images/opt/ruta-6.webp"><img src="images/opt/ruta-6.jpg" alt="Fuente de La Olmedilla" loading="lazy" data-caption="Fuente de La Olmedilla, antigua base guerrillera"></picture></button>
+        <button type="button"><picture><source type="image/avif" srcset="images/opt/ruta-7.avif"><source type="image/webp" srcset="images/opt/ruta-7.webp"><img src="images/opt/ruta-7.jpg" alt="Rambla de la Olmedilla" loading="lazy" data-caption="Rambla de la Olmedilla, vía de escape de dos guerrilleros"></picture></button>
+        <button type="button"><picture><source type="image/avif" srcset="images/opt/ruta-8.avif"><source type="image/webp" srcset="images/opt/ruta-8.webp"><img src="images/opt/ruta-8.jpg" alt="Camino de Enguídanos" loading="lazy" data-caption="Camino de Enguídanos, paso de los cuerpos en 1951"></picture></button>
+        <button type="button"><picture><source type="image/avif" srcset="images/opt/ruta-9.avif"><source type="image/webp" srcset="images/opt/ruta-9.webp"><img src="images/opt/ruta-9.jpg" alt="Último tramo de la ruta hacia La Pesquera" loading="lazy" data-caption="Último tramo: la carretera del Pantano"></picture></button>
       </div>
     </div>
   </main>

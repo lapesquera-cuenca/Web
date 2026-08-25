@@ -1,4 +1,4 @@
 User-agent: *
-Disallow: /entremontes/images/
+Allow: /
 
 Sitemap: https://www.elmanco.es/sitemap.xml
